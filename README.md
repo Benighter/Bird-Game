@@ -1,6 +1,6 @@
 # Flappy Bird Game
 
-A Python implementation of the classic Flappy Bird game using Pygame.
+A Python implementation of the classic Flappy Bird game using Pygame with enhanced visual effects and animations.
 
 ## Features
 
@@ -9,6 +9,13 @@ A Python implementation of the classic Flappy Bird game using Pygame.
 - Score tracking with high score persistence
 - Game state management (start menu, gameplay, game over)
 - Bird animation with realistic physics
+- Enhanced death sequence:
+  - Bird falls realistically with rotation and bouncing
+  - Particle effects on impact with pipes or ground
+  - Feather particles on collision
+  - Ground dust particles when hitting the ground
+  - Fade-in death screen that appears after the bird lands
+- Stylish game over screen with options to restart or return to menu
 - Collision detection
 
 ## Tech Stack
@@ -35,7 +42,9 @@ A Python implementation of the classic Flappy Bird game using Pygame.
 - Press SPACE to make the bird jump/flap
 - Navigate through the pipes
 - Try to achieve the highest score possible
-- Press R to restart after game over
+- When game over:
+  - Click "Restart" to play again
+  - Click "Main Menu" to return to the start screen
 
 ## Project Structure
 
@@ -44,9 +53,10 @@ Flappy-Bird/
 ├── main.py                  # Entry point
 ├── src/                     # Source code
 │   ├── components/          # Game objects
-│   │   ├── bird.py          # Bird class
+│   │   ├── bird.py          # Bird class with physics and animations
 │   │   ├── pipe.py          # Pipe class
-│   │   └── button.py        # UI button class
+│   │   ├── button.py        # UI button class
+│   │   └── particle.py      # Particle system for visual effects
 │   ├── game/                # Game logic
 │   │   ├── controller.py    # Main game controller
 │   │   ├── state.py         # Game state management

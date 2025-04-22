@@ -18,8 +18,8 @@ GROUND_HEIGHT = 100
 PIPE_COLOR = (34, 139, 34)  # Forest green
 SCORE_COLOR = (255, 255, 255)
 GROUND_COLOR = (139, 69, 19)  # Brown
-BUTTON_COLOR = (0, 255, 0)  # Green
-BUTTON_HOVER_COLOR = (0, 128, 0)  # Darker green
+BUTTON_COLOR = (70, 70, 70)  # Dark gray
+BUTTON_HOVER_COLOR = (100, 100, 100)  # Lighter gray
 
 # Physics
 GRAVITY = 0.9

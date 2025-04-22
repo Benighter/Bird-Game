@@ -11,6 +11,7 @@ class Button:
         self.color = color
         self.hover_color = hover_color
         self.font = font
+        self.text_color = (255, 255, 255)  # White text for better visibility on dark backgrounds
 
     def draw(self, window):
         mouse_pos = pygame.mouse.get_pos()
@@ -21,7 +22,7 @@ class Button:
         else:
             pygame.draw.rect(window, self.color, button_rect)
 
-        text_surface = self.font.render(self.text, True, SCORE_COLOR)
+        text_surface = self.font.render(self.text, True, self.text_color)
         text_rect = text_surface.get_rect(center=button_rect.center)
         window.blit(text_surface, text_rect)
 
